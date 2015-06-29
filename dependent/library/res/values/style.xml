@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="myProgressBarStyle" >
+　　<item name="android:indeterminateDrawable">@drawable/rotate_draw</item>
+　　<item name="android:minWidth">@dimen/dp70</item>
+　　<item name="android:maxWidth">@dimen/dp70</item>
+　　<item name="android:minHeight">@dimen/dp70</item>
+　　<item name="android:maxHeight">@dimen/dp70</item>
+</style>
+</resources>

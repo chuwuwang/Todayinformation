@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <include
+            android:id="@+id/head"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp160"
+            layout="@layout/include_title_head" />
+
+        <com.todayinfo.ui.component.PagerSlidingTabStrip
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp150"
+            android:layout_below="@+id/head"
+            android:background="#ffffff" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/content_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabs" >
+        </android.support.v4.view.ViewPager>
+    </RelativeLayout>
+
+</FrameLayout>

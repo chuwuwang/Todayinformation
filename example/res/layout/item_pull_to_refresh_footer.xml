@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp150"
+    android:background="#ECECEC"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp30"
+    android:paddingTop="@dimen/dp30" >
+
+    <!-- 下拉刷新的最后一条信息 -->
+
+    <TextView
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#7f7f7f"
+        android:textSize="@dimen/sp45" />
+
+</LinearLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp160"
+    android:background="@drawable/top_bg" >
+
+    <!-- 公共的head -->
+
+    <RelativeLayout
+        android:id="@+id/back_left"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp158"
+        android:layout_marginRight="@dimen/dp40" >
+
+        <ImageView
+            android:id="@+id/left"
+            android:layout_width="@dimen/dp60"
+            android:layout_height="@dimen/dp60"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp40"
+            android:src="@drawable/back_left" />
+
+        <TextView
+            android:id="@+id/head_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp20"
+            android:layout_toRightOf="@id/left"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:text="博客分享"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp50" />
+    </RelativeLayout>
+
+</RelativeLayout>

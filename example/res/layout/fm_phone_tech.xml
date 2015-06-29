@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ECECEC"
+    android:orientation="vertical" >
+
+    <com.todayinfo.ui.component.ErrorHintView
+        android:id="@+id/hintView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/index_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black" >
+
+        <ImageView
+            android:id="@+id/index_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp700"
+            android:scaleType="centerCrop"
+            android:layout_centerInParent="true"
+            android:src="@color/ECECEC" />
+    </RelativeLayout>
+
+    <com.todayinfo.ui.component.jazzviewpager.JazzyViewPager
+        android:id="@+id/phone_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp550"
+        android:background="@color/white" >
+    </com.todayinfo.ui.component.jazzviewpager.JazzyViewPager>
+
+    <LinearLayout
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/dp2"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none"
+        ptr:ptrAnimationStyle="flip" >
+    </com.handmark.pulltorefresh.library.PullToRefreshListView>
+
+</LinearLayout>

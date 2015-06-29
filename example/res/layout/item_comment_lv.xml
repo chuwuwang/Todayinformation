@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wy="http://schemas.android.com/apk/res/com.jinghua.todayinformation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dp35"
+    android:paddingLeft="@dimen/dp30"
+    android:paddingRight="@dimen/dp30"
+    android:paddingTop="@dimen/dp35" >
+
+    <LinearLayout
+        android:id="@+id/comment_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp126"
+        android:orientation="horizontal" >
+
+        <com.todayinfo.ui.component.CircleImageView
+            android:id="@+id/comment_image"
+            android:layout_width="@dimen/dp116"
+            android:layout_height="@dimen/dp116"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/touxiang"
+            wy:round="@dimen/dp60" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp26" >
+
+            <TextView
+                android:id="@+id/comment_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp40" />
+
+            <TextView
+                android:id="@+id/comment_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text=""
+                android:textColor="#969696"
+                android:textSize="@dimen/sp30" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/comment_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp20"
+        android:text=""
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp40" />
+
+</LinearLayout>

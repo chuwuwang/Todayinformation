@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_bar"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/dp20" >
+
+    <View
+        android:id="@+id/color_title_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp6"
+        android:background="@color/red" />
+
+    <TextView
+        android:id="@+id/auther_smallfon"
+        android:layout_width="@dimen/dp400"
+        android:layout_height="@dimen/dp130"
+        android:layout_marginLeft="@dimen/dp60"
+        android:background="@color/red"
+        android:gravity="center"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/sp40" />
+
+    <TextView
+        android:id="@+id/time_smallfont"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/auther_smallfon"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp20"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/light_gray_text"
+        android:textSize="@dimen/sp40" />
+
+    <TextView
+        android:id="@+id/news_title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/auther_smallfon"
+        android:layout_marginLeft="@dimen/dp60"
+        android:layout_marginTop="@dimen/dp30"
+        android:gravity="center_vertical"
+        android:text=""
+        android:textColor="@color/new_tex_content"
+        android:textSize="@dimen/sp50"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="wrap_content"
+        android:layout_height="1dip"
+        android:layout_below="@+id/news_title_name"
+        android:layout_marginLeft="@dimen/dp60"
+        android:layout_marginRight="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp30"
+        android:background="#ffc7c7c7" />
+
+</RelativeLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp30"
+    android:paddingBottom="@dimen/dp30" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="@dimen/dp600"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp30"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="@dimen/sp45" />
+	
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp300"
+        android:src="@color/ECECEC"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp30"
+        android:scaleType="fitXY" />
+    
+     <ImageView
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp300"
+        android:src="@drawable/coner_bg"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp30"
+        android:scaleType="fitXY" />
+    
+    <TextView
+        android:id="@+id/sourceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="@dimen/dp25"
+        android:paddingLeft="@dimen/dp30"
+        android:text=""
+        android:textColor="#F65121"
+        android:textSize="@dimen/sp40" />
+
+    <TextView
+        android:id="@+id/comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_marginTop="@dimen/dp25"
+        android:layout_toRightOf="@+id/sourceName"
+        android:text=""
+        android:textColor="#787878"
+        android:textSize="@dimen/sp40" />
+
+    <LinearLayout
+        android:id="@+id/diggs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comments"
+        android:layout_marginTop="@dimen/dp25"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp30" >
+
+        <ImageView
+            android:layout_width="@dimen/dp54"
+            android:layout_height="@dimen/dp54"
+            android:src="@drawable/hots_diggs_press" />
+
+        <TextView
+            android:id="@+id/diggs_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#787878"
+            android:textSize="@dimen/sp40" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/publish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comments"
+        android:layout_marginTop="@dimen/dp25"
+        android:layout_toRightOf="@+id/diggs"
+        android:layout_marginLeft="@dimen/dp20"
+        android:text=""
+        android:textColor="#787878"
+        android:textSize="@dimen/sp40" />
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/content_imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp700"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_marginRight="@dimen/dp30"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@color/ECECEC" />
+
+</LinearLayout>

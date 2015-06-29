@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ECECEC"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp160"
+        layout="@layout/include_title_head" />
+
+    <include
+        android:id="@+id/head_filter"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp120"
+        android:layout_marginBottom="@dimen/dp60"
+        android:layout_marginLeft="@dimen/dp50"
+        android:layout_marginRight="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp60"
+        layout="@layout/include_blogshare_filter" />
+
+    <com.todayinfo.ui.component.SuperViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" />
+
+</LinearLayout>

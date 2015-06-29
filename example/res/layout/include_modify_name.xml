@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/blankarea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/string_textView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp160"
+            android:background="#ebebeb"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="姓名"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp55" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp74"
+            android:layout_marginLeft="@dimen/dp65"
+            android:layout_marginRight="@dimen/dp65"
+            android:layout_marginTop="@dimen/dp77"
+            android:background="@color/DCDCDC"
+            android:gravity="center" >
+
+            <EditText
+                android:id="@+id/name_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp162"
+                android:layout_marginBottom="@dimen/dp2"
+                android:layout_marginLeft="@dimen/dp2"
+                android:layout_marginRight="@dimen/dp2"
+                android:layout_marginTop="@dimen/dp2"
+                android:background="@color/white"
+                android:gravity="center"
+                android:hint="输入姓名"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp55" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/DCDCDC"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp157"
+                android:layout_marginTop="@dimen/dp2"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp50" />
+
+            <TextView
+                android:id="@+id/ok_button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp157"
+                android:layout_marginLeft="@dimen/dp2"
+                android:layout_marginTop="@dimen/dp2"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp50" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

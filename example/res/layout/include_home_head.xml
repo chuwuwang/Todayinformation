@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp149"
+    android:background="@drawable/top_bg"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:id="@+id/home_left"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:layout_width="@dimen/dp90"
+            android:layout_height="@dimen/dp90"
+            android:layout_marginLeft="@dimen/dp40"
+            android:background="@raw/icon_left_menu"
+            android:gravity="center_vertical" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="@dimen/dp0"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="今日资讯"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp55" />
+
+    <RelativeLayout
+        android:id="@+id/home_right"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+            android:layout_width="@dimen/dp90"
+            android:layout_height="@dimen/dp90"
+            android:layout_centerInParent="true"
+            android:background="@raw/icon_right_menu" />
+    </RelativeLayout>
+
+</LinearLayout>

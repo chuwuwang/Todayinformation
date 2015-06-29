@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingBottom="@dimen/dp30"
+    android:paddingLeft="@dimen/dp30"
+    android:paddingRight="@dimen/dp30"
+    android:paddingTop="@dimen/dp30" >
+
+    <ImageView
+        android:id="@+id/imgNewsPic"
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp200"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@color/ECECEC" />
+    
+    <ImageView
+        android:layout_width="@dimen/dp300"
+        android:layout_height="@dimen/dp200"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/coner_bg" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp30"
+        android:layout_toRightOf="@id/imgNewsPic"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp45" />
+
+        <TextView
+            android:id="@+id/tvDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dp90"
+            android:layout_marginTop="@dimen/dp10"
+            android:maxLines="2"
+            android:textColor="@color/light_gray_text"
+            android:textSize="@dimen/sp40" />
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="@dimen/dp10"
+            android:textColor="@color/light_gray_text"
+            android:textSize="@dimen/sp40" />
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="@dimen/dp50"
+        android:layout_height="@dimen/dp50"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:src="@drawable/arrow_right_normal" />
+
+</RelativeLayout>

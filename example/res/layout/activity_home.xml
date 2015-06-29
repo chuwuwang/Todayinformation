@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/home_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp149"
+        layout="@layout/include_home_head" />
+
+    <include
+        android:id="@+id/home_foot"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp160"
+        android:layout_alignParentBottom="true"
+        layout="@layout/include_home_tabfoot" />
+
+    <FrameLayout
+        android:id="@+id/home_basiceFm_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/home_foot"
+        android:layout_below="@+id/home_top" >
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/home_fm_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+    </FrameLayout>
+
+</RelativeLayout>

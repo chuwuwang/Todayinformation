@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wy="http://schemas.android.com/apk/res/com.jinghua.todayinformation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp30"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="@dimen/sp50" />
+
+    <RelativeLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="@dimen/dp15"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20" >
+
+        <com.todayinfo.ui.component.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/dp116"
+            android:layout_height="@dimen/dp116"
+            android:layout_centerVertical="true"
+            android:background="@drawable/touxiang"
+            wy:round="@dimen/dp60" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp25"
+            android:layout_toRightOf="@+id/image"
+            android:text=""
+            android:textColor="#F65121"
+            android:textSize="@dimen/sp40" />
+
+        <TextView
+            android:id="@+id/publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp30"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginTop="@dimen/dp5"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="#F65121"
+            android:textSize="@dimen/sp40" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll"
+        android:layout_marginTop="@dimen/dp15"
+        android:paddingLeft="@dimen/dp30"
+        android:paddingRight="@dimen/dp30"
+        android:text=""
+        android:textColor="#787878"
+        android:textSize="@dimen/sp45" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp2"
+        android:layout_below="@+id/summary"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="#ececec" />
+
+    <LinearLayout
+        android:id="@+id/panel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp110"
+        android:layout_below="@+id/line"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20" >
+
+        <LinearLayout
+            android:id="@+id/hots_views"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/dp54"
+                android:layout_height="@dimen/dp54"
+                android:src="@drawable/hots_views" />
+
+            <TextView
+                android:id="@+id/views_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#787878"
+                android:textSize="@dimen/sp40" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="match_parent"
+            android:background="#ececec" />
+
+        <LinearLayout
+            android:id="@+id/hots_diggs"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/dp54"
+                android:layout_height="@dimen/dp54"
+                android:src="@drawable/hots_diggs_normal" />
+
+            <TextView
+                android:id="@+id/diggs_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#787878"
+                android:textSize="@dimen/sp40" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="match_parent"
+            android:background="#ececec" />
+
+        <LinearLayout
+            android:id="@+id/hots_comment"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/dp54"
+                android:layout_height="@dimen/dp54"
+                android:src="@drawable/hots_comment" />
+
+            <TextView
+                android:id="@+id/comment_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#787878"
+                android:textSize="@dimen/sp40" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:layout_below="@+id/panel"
+        android:background="#ececec" />
+
+</RelativeLayout>

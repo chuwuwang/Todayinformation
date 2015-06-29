@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp160"
+        android:background="#ebebeb"
+        android:gravity="center"
+        android:text="请选择您的生日"
+        android:textColor="#505050"
+        android:textSize="@dimen/dp54" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp12"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <com.todayinfo.ui.component.WheelView
+            android:id="@+id/year"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <com.todayinfo.ui.component.WheelView
+            android:id="@+id/month"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" />
+
+        <com.todayinfo.ui.component.WheelView
+            android:id="@+id/day"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@color/DCDCDC"
+        android:gravity="center" >
+
+        <Button
+            android:id="@+id/btn_datetime_cancel"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp157"
+            android:layout_marginTop="@dimen/dp2"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="取消"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp50" >
+        </Button>
+
+        <Button
+            android:id="@+id/btn_datetime_sure"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp157"
+            android:layout_marginLeft="@dimen/dp2"
+            android:layout_marginTop="@dimen/dp2"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:text="确定"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp50" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

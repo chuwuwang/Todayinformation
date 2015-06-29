@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp160"
+        layout="@layout/include_title_head" />
+
+    <RelativeLayout
+        android:id="@+id/check_update"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp150"
+        android:layout_below="@+id/head"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp30"
+        android:paddingRight="@dimen/dp30" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="检查更新"
+            android:textColor="#787878"
+            android:textSize="@dimen/sp45" />
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="当前版本V1.0.0"
+            android:textColor="#969696"
+            android:textSize="@dimen/sp45" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp150"
+        android:layout_below="@+id/check_update"
+        android:layout_marginTop="@dimen/dp2"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp30"
+        android:paddingRight="@dimen/dp30" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="清除图片缓存"
+            android:textColor="#787878"
+            android:textSize="@dimen/sp45" />
+
+        <TextView
+            android:id="@+id/cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="10KB"
+            android:textColor="#969696"
+            android:textSize="@dimen/sp45" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/enter_wel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp150"
+        android:layout_below="@+id/clear_cache"
+        android:layout_marginTop="@dimen/dp2"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp30"
+        android:paddingRight="@dimen/dp30" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="欢迎界面"
+            android:textColor="#787878"
+            android:textSize="@dimen/sp45" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/contact_person"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp150"
+        android:layout_below="@+id/enter_wel"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp30"
+        android:paddingRight="@dimen/dp30" >
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="@dimen/dp70"
+            android:layout_height="@dimen/dp70"
+            android:layout_centerVertical="true"
+            android:src="@drawable/tel" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_toRightOf="@+id/image1"
+            android:text="联系开发人员:18616742809"
+            android:textColor="#787878"
+            android:textSize="@dimen/sp45" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/feed_back"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp150"
+        android:layout_below="@+id/contact_person"
+        android:layout_marginTop="@dimen/dp2"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp30"
+        android:paddingRight="@dimen/dp30" >
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="@dimen/dp70"
+            android:layout_height="@dimen/dp70"
+            android:layout_centerVertical="true"
+            android:src="@drawable/feedback" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_toRightOf="@+id/image2"
+            android:text="意见反馈"
+            android:textColor="#787878"
+            android:textSize="@dimen/sp45" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/about"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp150"
+        android:layout_below="@+id/feed_back"
+        android:layout_marginTop="@dimen/dp2"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp30"
+        android:paddingRight="@dimen/dp30" >
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="@dimen/dp70"
+            android:layout_height="@dimen/dp70"
+            android:layout_centerVertical="true"
+            android:src="@drawable/about" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_toRightOf="@+id/image3"
+            android:text="关于今日资讯"
+            android:textColor="#787878"
+            android:textSize="@dimen/sp45" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp20"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp50"
+            android:layout_marginRight="@dimen/dp50"
+            android:gravity="center"
+            android:text="安徽工业大学工商学院"
+            android:textColor="#787878"
+            android:textSize="@dimen/sp40" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp50"
+            android:layout_marginRight="@dimen/dp50"
+            android:gravity="center"
+            android:text="©2015 Industrial &amp; Commercial College,AnHui University of Technology"
+            android:textColor="#969696"
+            android:textSize="@dimen/sp35" />
+    </LinearLayout>
+
+    <ViewStub
+        android:id="@+id/cache_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/include_clear_cache" />
+
+</RelativeLayout>

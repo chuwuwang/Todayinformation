@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp120"
+    android:orientation="horizontal"
+    android:splitMotionEvents="false" >
+
+    <TextView
+        android:id="@+id/news_blog"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp120"
+        android:layout_weight="1"
+        android:background="@drawable/nofinish_filter_pressed_bg"
+        android:gravity="center"
+        android:text="最新博客"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp45" />
+
+    <TextView
+        android:id="@+id/hots_blog"
+        android:layout_width="@dimen/dp0"
+        android:layout_height="@dimen/dp120"
+        android:layout_weight="1"
+        android:background="@drawable/finished_filter_normal_bg"
+        android:gravity="center"
+        android:text="热门博客"
+        android:textColor="#FF545A"
+        android:textSize="@dimen/sp45" />
+
+</LinearLayout>

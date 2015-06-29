@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp160"
+        layout="@layout/include_title_head" />
+
+    <com.todayinfo.ui.component.ErrorHintView
+        android:id="@+id/hintView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/head"
+        android:layout_marginBottom="@dimen/dp150"
+        android:scrollbars="none" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f5f5f5" >
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp30"
+                android:gravity="center"
+                android:paddingLeft="@dimen/dp30"
+                android:paddingRight="@dimen/dp30"
+                android:textColor="@color/E505050"
+                android:textSize="@dimen/sp45" />
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title"
+                android:layout_marginTop="@dimen/dp10"
+                android:gravity="center"
+                android:paddingBottom="@dimen/dp30"
+                android:text=""
+                android:textColor="@color/E787878"
+                android:textSize="@dimen/sp40" />
+
+            <WebView
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/date" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp150"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:splitMotionEvents="false" >
+
+        <LinearLayout
+            android:id="@+id/toolbar_top"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/dp84"
+                android:layout_height="@dimen/dp84"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/toolbar_icon_retweet" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="置顶"
+                android:textColor="#787878"
+                android:textSize="@dimen/sp40" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbar_comment"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/dp84"
+                android:layout_height="@dimen/dp84"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/toolbar_compose" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="评论"
+                android:textColor="#787878"
+                android:textSize="@dimen/sp40" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/toolbar_save"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="@dimen/dp84"
+                android:layout_height="@dimen/dp84"
+                android:layout_gravity="center"
+                android:scaleType="fitXY"
+                android:src="@drawable/toolbar_favorite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="收藏"
+                android:textColor="#787878"
+                android:textSize="@dimen/sp40" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp2"
+        android:layout_above="@+id/ll"
+        android:background="@color/ECECEC" />
+
+</RelativeLayout>

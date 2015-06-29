@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/name_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp160"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp40"
+        android:paddingRight="@dimen/dp40" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="姓名"
+            android:textColor="#505050"
+            android:textSize="@dimen/sp45" />
+
+        <ImageView
+            android:id="@+id/image1"
+            android:layout_width="@dimen/dp45"
+            android:layout_height="@dimen/dp45"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_toLeftOf="@+id/image1"
+            android:text="Aco"
+            android:textColor="#505050"
+            android:textSize="@dimen/sp45" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/sex_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp160"
+        android:layout_below="@+id/name_rl"
+        android:layout_marginTop="@dimen/dp2"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp40"
+        android:paddingRight="@dimen/dp40" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="性别"
+            android:textColor="#505050"
+            android:textSize="@dimen/sp45" />
+
+        <ImageView
+            android:id="@+id/image2"
+            android:layout_width="@dimen/dp45"
+            android:layout_height="@dimen/dp45"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right" />
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_toLeftOf="@+id/image2"
+            android:text="男"
+            android:textColor="#505050"
+            android:textSize="@dimen/sp45" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/brithday_rl"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp160"
+        android:layout_below="@+id/sex_rl"
+        android:layout_marginTop="@dimen/dp2"
+        android:background="@color/white"
+        android:paddingLeft="@dimen/dp40"
+        android:paddingRight="@dimen/dp40" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="生日"
+            android:textColor="#505050"
+            android:textSize="@dimen/sp45" />
+
+        <ImageView
+            android:id="@+id/image3"
+            android:layout_width="@dimen/dp45"
+            android:layout_height="@dimen/dp45"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_right" />
+
+        <TextView
+            android:id="@+id/brithday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/image3"
+            android:text="1985-01-19"
+            android:textColor="#505050"
+            android:textSize="@dimen/sp45" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/exit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp160"
+        android:layout_marginLeft="@dimen/dp40"
+        android:layout_marginRight="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp40"
+        android:background="@drawable/my_info_exit_bg"
+        android:gravity="center"
+        android:text="退出当前账户"
+        android:textColor="#fafafa"
+        android:textSize="@dimen/sp45" />
+
+</LinearLayout>

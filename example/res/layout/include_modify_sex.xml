@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90000000"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/blankarea"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/nan"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp162"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:paddingLeft="@dimen/dp79"
+                android:text="男"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp45" />
+
+            <TextView
+                android:id="@+id/nan_radiobtn"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginRight="@dimen/dp52"
+                android:background="@drawable/rediobox2"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp57" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp2"
+            android:background="#ececec" />
+
+        <LinearLayout
+            android:id="@+id/nv"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp162"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:paddingLeft="@dimen/dp79"
+                android:text="女"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp45" />
+
+            <TextView
+                android:id="@+id/nv_radiobtn"
+                android:layout_width="@dimen/dp50"
+                android:layout_height="@dimen/dp50"
+                android:layout_marginRight="@dimen/dp52"
+                android:background="@drawable/rediobox2"
+                android:gravity="right|center_vertical"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp57" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/DCDCDC"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/cancel_button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp157"
+                android:layout_marginTop="@dimen/dp2"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp50" />
+
+            <TextView
+                android:id="@+id/ok_button"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dp157"
+                android:layout_marginLeft="@dimen/dp2"
+                android:layout_marginTop="@dimen/dp2"
+                android:layout_weight="1"
+                android:background="@color/white"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp50" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

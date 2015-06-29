@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp160"
+    android:layout_alignParentBottom="true"
+    android:background="#ffffff"
+    android:gravity="center"
+    android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/home_phone_iv"
+        android:layout_width="@dimen/dp152"
+        android:layout_height="@dimen/dp152"
+        android:layout_weight="1"
+        android:onClick="tabOnclick"
+        android:src="@raw/phone_press" />
+
+    <ImageView
+        android:id="@+id/home_news_iv"
+        android:layout_width="@dimen/dp152"
+        android:layout_height="@dimen/dp152"
+        android:layout_weight="1"
+        android:src="@raw/news_normal"
+        android:onClick="tabOnclick" />
+
+    <ImageView
+        android:id="@+id/home_girl_iv"
+        android:layout_width="@dimen/dp152"
+        android:layout_height="@dimen/dp152"
+        android:layout_weight="1"
+        android:onClick="tabOnclick"
+        android:src="@raw/girl_normal" />
+
+</LinearLayout>

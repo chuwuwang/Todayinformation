@@ -1,0 +1,25 @@
+<resources>
+
+    <string name="app_name">今日资讯</string>
+    <string name="exit">退出</string>
+    <string name="exit_app">你确定退出今日资讯?</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+
+    <!-- JazzyViewPager -->
+    <string-array name="jazzy_effects">
+        <item>Standard</item>
+        <item>Tablet</item>
+        <item>CubeIn</item>
+        <item>CubeOut</item>
+        <item>FlipVertical</item>
+        <item>FlipHorizontal</item>
+        <item>Stack</item>
+        <item>ZoomIn</item>
+        <item>ZoomOut</item>
+        <item>RotateUp</item>
+        <item>RotateDown</item>
+        <item>Accordion</item>
+    </string-array>
+
+</resources>

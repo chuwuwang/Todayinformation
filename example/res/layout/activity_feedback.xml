@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ECECEC"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp160"
+        layout="@layout/include_title_head" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/dp35"
+        android:layout_marginRight="@dimen/dp35"
+        android:layout_marginTop="@dimen/dp28"
+        android:background="@color/ECECEC" >
+
+        <EditText
+            android:id="@+id/problem_text"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp664"
+            android:layout_marginBottom="@dimen/dp2"
+            android:layout_marginLeft="@dimen/dp2"
+            android:layout_marginRight="@dimen/dp2"
+            android:layout_marginTop="@dimen/dp2"
+            android:background="@color/white"
+            android:gravity="left"
+            android:hint="请输入您的建议"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingTop="@dimen/dp10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp40" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/sumbit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp165"
+        android:layout_marginLeft="@dimen/dp40"
+        android:layout_marginRight="@dimen/dp40"
+        android:layout_marginTop="@dimen/dp33"
+        android:background="@drawable/feedback_button_bg"
+        android:text="提交意见"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp50" />
+
+</LinearLayout>

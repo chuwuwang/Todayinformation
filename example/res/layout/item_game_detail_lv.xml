@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp210"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp40"
+    android:paddingRight="@dimen/dp20"
+    android:paddingTop="@dimen/dp30" >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/dp150"
+        android:layout_height="@dimen/dp150"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/def_icon" />
+
+    <ImageView
+        android:layout_width="@dimen/dp150"
+        android:layout_height="@dimen/dp150"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/coner_bg" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dp20"
+        android:layout_toRightOf="@+id/icon" >
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="@color/E505050"
+            android:textSize="@dimen/dp40" />
+
+        <ImageView
+            android:id="@+id/star"
+            android:layout_width="@dimen/dp207"
+            android:layout_height="@dimen/dp35"
+            android:layout_below="@+id/name"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="@dimen/dp20"
+            android:src="@drawable/start2" />
+
+        <TextView
+            android:id="@+id/people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_marginLeft="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_toRightOf="@+id/star"
+            android:gravity="center_vertical"
+            android:text=""
+            android:textColor="@color/E505050"
+            android:textSize="@dimen/dp40" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/dp300"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/download"
+            android:layout_width="@dimen/dp150"
+            android:layout_height="@dimen/dp80"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/game_button_bg"
+            android:gravity="center"
+            android:text="下载"
+            android:textColor="@color/white"
+            android:textSize="@dimen/dp40" />
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/download"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp5"
+            android:text=""
+            android:textColor="@color/E505050"
+            android:textSize="@dimen/dp40" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp2"
+        android:layout_marginTop="@dimen/dp210"
+        android:background="#ececec" />
+
+</RelativeLayout>

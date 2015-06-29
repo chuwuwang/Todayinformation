@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/guide3" />
+
+    <TextView
+        android:id="@+id/guide3_tx2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp330"
+        android:layout_marginLeft="@dimen/dp70"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp100" />
+
+    <TextView
+        android:id="@+id/guide3_tx1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/guide3_tx2"
+        android:layout_marginLeft="@dimen/dp70"
+        android:text=""
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp70" />
+
+    <TextView
+        android:id="@+id/item_introduct_finish"
+        android:layout_width="@dimen/dp480"
+        android:layout_height="@dimen/dp130"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dp80"
+        android:background="@drawable/guide_start_bg"
+        android:gravity="center"
+        android:text="立即体验"
+        android:textColor="#568e24"
+        android:textSize="@dimen/sp65" />
+
+</RelativeLayout>

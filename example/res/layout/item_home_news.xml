@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp30" >
+
+    <TextView
+        android:id="@+id/hots_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20"
+        android:text="致大学生:连工作都找不到的趁早别创业"
+        android:textColor="#000000"
+        android:textSize="@dimen/sp50" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20" >
+
+        <TextView
+            android:id="@+id/hots_sourceName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="腾讯科技"
+            android:textColor="#F65121"
+            android:textSize="@dimen/sp40" />
+
+        <TextView
+            android:id="@+id/hots_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp5"
+            android:text="2014-10-6"
+            android:textColor="#787878"
+            android:textSize="@dimen/sp40" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/hots_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp10"
+        android:paddingLeft="@dimen/dp30"
+        android:paddingRight="@dimen/dp30"
+        android:text="21日，知名博主在网上爆料称：“大s被汪小菲家暴，暗示两人婚姻有可能被亮红灯。二年前，汪小菲曾在王思聪的微博悄悄留言，骂王是孙子，不知道这次汪小菲会不会被王思聪彻底激怒，正式和王思聪公开撕逼。总之好期待好期待。”这个事情的曝出不知道是纯粹的恶作剧还是真有此事，小编也会继续关注。"
+        android:textColor="#787878"
+        android:textSize="@dimen/sp45" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp2"
+        android:layout_marginBottom="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp20"
+        android:background="#ececec" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp80"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingRight="@dimen/dp20" >
+
+        <LinearLayout
+            android:id="@+id/hots_views"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/dp54"
+                android:layout_height="@dimen/dp54"
+                android:src="@drawable/hots_views" />
+
+            <TextView
+                android:id="@+id/views_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="5"
+                android:textColor="#787878"
+                android:textSize="@dimen/sp40" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="match_parent"
+            android:background="#ececec" />
+
+        <LinearLayout
+            android:id="@+id/hots_diggs"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/dp54"
+                android:layout_height="@dimen/dp54"
+                android:src="@drawable/hots_diggs_normal" />
+
+            <TextView
+                android:id="@+id/diggs_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="112"
+                android:textColor="#787878"
+                android:textSize="@dimen/sp40" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/dp1"
+            android:layout_height="match_parent"
+            android:background="#ececec" />
+
+        <LinearLayout
+            android:id="@+id/hots_comment"
+            android:layout_width="@dimen/dp0"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:layout_width="@dimen/dp54"
+                android:layout_height="@dimen/dp54"
+                android:src="@drawable/hots_comment" />
+
+            <TextView
+                android:id="@+id/comment_tx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3"
+                android:textColor="#787878"
+                android:textSize="@dimen/sp40" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp30"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="#ececec" />
+
+</LinearLayout>

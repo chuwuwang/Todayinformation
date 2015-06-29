@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/gril_list_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/dp20" >
+
+    <ImageView
+        android:id="@+id/gril_image"
+        android:layout_width="@dimen/dp750"
+        android:layout_height="@dimen/dp900"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@color/ECECEC" />
+
+    <ImageView
+        android:id="@+id/coner"
+        android:layout_width="@dimen/dp750"
+        android:layout_height="@dimen/dp900"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:scaleType="fitXY"
+        android:src="@drawable/coner_bg" />
+
+    <TextView
+        android:id="@+id/gril_title"
+        android:layout_width="@dimen/dp750"
+        android:layout_height="@dimen/dp100"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/gril_image"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/dp100n"
+        android:background="#90000000"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="miss和球王贝拉排位十连胜,引爆全场"
+        android:textColor="#ffffff"
+        android:textSize="@dimen/sp40" />
+
+</RelativeLayout>
