@@ -337,7 +337,7 @@ public class PhoneTechFragment extends SuperFragment {
 		params.put("module", "api_libraries_sjdbg_indexrecommend");
 		params.put("returnformat", "json");
 		params.put("encoding", "utf8");
-//		params.put("onetime", timeStamp);			//分页用，传第一条新闻的时间戳，第一页下不用传值。
+		// params.put("onetime", timeStamp);			//分页用，传第一条新闻的时间戳，第一页下不用传值。
 		params.put("offset", offset );				//分页用，数据记录的起始行数。0为第一条记录。
 		params.put("rows", 10);						//分页用，数据记录每次取得的行数。不传此参数则默认获取10条记录。
 		

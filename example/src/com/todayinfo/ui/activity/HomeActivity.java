@@ -48,7 +48,7 @@ public class HomeActivity extends SuperFragmentActivity implements OnClickListen
 	private ResideMenuItem bolgsShareItem;  		  //博客分享	
 	private ResideMenuItem lifeNewsItem;			  //生活新闻
 	private ResideMenuItem gameslifeItem;			  //游戏人生
-//	private ResideMenuItem grilItem;			 	  //美女写真集
+	private ResideMenuItem grilItem;			 	  //美女写真集
 	
 	//右边
 	private ResideMenuItem myInfoItem;				  //我的	
@@ -167,7 +167,7 @@ public class HomeActivity extends SuperFragmentActivity implements OnClickListen
         bolgsShareItem = new ResideMenuItem(this, R.raw.icon_bolgs,  "博客分享");
         lifeNewsItem = new ResideMenuItem(this, R.raw.icon_movie, "生活新闻");
         gameslifeItem = new ResideMenuItem(this, R.raw.icon_games, "游戏人生");
-//        grilItem = new ResideMenuItem(this, R.raw.icon_gril, "美女写真");
+        grilItem = new ResideMenuItem(this, R.raw.icon_gril, "美女写真");
         
         // create right menu items;
         myInfoItem = new ResideMenuItem(this, R.raw.wo, "登录");
@@ -181,7 +181,7 @@ public class HomeActivity extends SuperFragmentActivity implements OnClickListen
         bolgsShareItem.setOnClickListener(this);
         lifeNewsItem.setOnClickListener(this);
         gameslifeItem.setOnClickListener(this);
-//        grilItem.setOnClickListener(this);
+        grilItem.setOnClickListener(this);
         
         //right click event
         myInfoItem.setOnClickListener(this);
@@ -195,7 +195,7 @@ public class HomeActivity extends SuperFragmentActivity implements OnClickListen
         mResideMenu.addMenuItem(bolgsShareItem, ResideMenu.DIRECTION_LEFT);
         mResideMenu.addMenuItem(lifeNewsItem, ResideMenu.DIRECTION_LEFT);
         mResideMenu.addMenuItem(gameslifeItem, ResideMenu.DIRECTION_LEFT);
-//        mResideMenu.addMenuItem(grilItem, ResideMenu.DIRECTION_LEFT);
+        mResideMenu.addMenuItem(grilItem, ResideMenu.DIRECTION_LEFT);
         
         //右边添加布局内容
         mResideMenu.addMenuItem(myInfoItem, ResideMenu.DIRECTION_RIGHT);
@@ -249,12 +249,12 @@ public class HomeActivity extends SuperFragmentActivity implements OnClickListen
 			}
 			changeActivity(mGamesLifeActivity);
 		} 
-//		else if ( v == grilItem ) {
-//			if ( mGirlPhotoActivity==null ) {
-//				mGirlPhotoActivity = new GirlPhotoActivity();
-//			}
-//			changeActivity(mGirlPhotoActivity);
-//		}
+		else if ( v == grilItem ) {
+			if ( mGirlPhotoActivity==null ) {
+				mGirlPhotoActivity = new GirlPhotoActivity();
+			}
+			changeActivity(mGirlPhotoActivity);
+		}
 		else if ( v == lifeNewsItem ) {
 			if ( mLifeNewsActivity==null ) {
 				mLifeNewsActivity = new LifeNewsActivity();
